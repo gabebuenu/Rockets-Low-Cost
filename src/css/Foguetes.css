@@ -1,0 +1,70 @@
+.foguetes-container {
+    padding: 20px;
+    position: relative; 
+  }
+  
+  .foguetes-container h1 {
+    text-align: left; 
+    margin-bottom: 20px; 
+    font-weight: 300;
+  }
+  
+  .foguetes-grid {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+  }
+  
+  .foguete-card {
+    width: 300px; 
+    height: 450px; 
+    padding: 16px 0 0 0;
+    gap: 10px;
+    border-radius: 8px;
+    border: 0.5px solid transparent;
+    opacity: 1;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .foguete-card img {
+    width: 280px; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .foguete-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .foguete-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .foguete-card button {
+    width: 280px; 
+    height: 50px; 
+    padding: 10px 0;
+    border-radius: 8px;
+    background-color: #1D3558;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: auto;
+  }
+  
+  .foguete-card button:hover {
+    background-color: #243b5e;
+  }
+  
