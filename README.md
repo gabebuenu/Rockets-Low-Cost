@@ -1,3 +1,5 @@
+#PROJETO SÓ RODA O FRONT NO VERCEL, BACKEND NÃO
+
 🚀 Rockets Low Costs
 Este projeto é um sistema para gerenciar e simular lançamentos de foguetes, com integração com a API da SpaceX e a capacidade de criar foguetes personalizados. O sistema foi construído utilizando React no front-end, Express como servidor backend, e MongoDB como banco de dados.
 
