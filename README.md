@@ -1,5 +1,4 @@
-Rockets Low Costs
-
+🚀 Rockets Low Costs
 Este projeto é um sistema para gerenciar e simular lançamentos de foguetes, com integração com a API da SpaceX e a capacidade de criar foguetes personalizados. O sistema foi construído utilizando React no front-end, Express como servidor backend, e MongoDB como banco de dados.
 
 🛠 Tecnologias Utilizadas
@@ -121,11 +120,9 @@ Testes Unitários: Adicionar testes unitários com Jest para garantir a qualidad
 Melhorias de UI/UX: Ajustar a interface para melhor experiência do usuário.
 Logs de Lançamentos: Implementar um histórico detalhado dos lançamentos com filtros.
 🧑‍💻 Contribuidores
-Gabriel Bueno da Silva
+Seu Nome
 📝 Licença
 Este projeto é licenciado sob a MIT License.
-
-Essa documentação fornece uma visão geral do projeto e guia o desenvolvedor através das etapas de instalação, configuração e uso.
 
 
 
