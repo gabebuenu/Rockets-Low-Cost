@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "./AuthContext";
 import "./css/Lançamento.css";
 import "./css/ModalLancamento.css"; // Importamos o CSS do modal
 
@@ -7,6 +8,7 @@ function Lançamento() {
   const location = useLocation();
   const navigate = useNavigate();
   const foguete = location.state?.foguete;
+  const { usuario } = useContext(AuthContext);
 
   // Estados para gerenciar o formulário e o modal
   const [lucro, setLucro] = useState("");
@@ -64,7 +66,7 @@ function Lançamento() {
 
   return (
     <div className={`lancamento-container ${mostrarModal ? 'blur' : ''}`}>
-      <h1>Fulano, selecione lucro e data de lançamento</h1>
+      <h1>Olá {usuario ? usuario.nome : "Usuário"}, selecione o lançamento</h1>
       <div className="lancamento-grid">
         <div className="foguete-selecionado">
           <h2>Foguete selecionado:</h2>
