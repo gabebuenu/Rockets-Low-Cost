@@ -71,7 +71,23 @@ function Foguetes() {
   useEffect(() => {
     if (isFoguetesLoaded && location.state?.fogueteAtualizado) {
       const fogueteAtualizado = location.state.fogueteAtualizado;
+  
+      // Atualiza foguetes SpaceX
       setFoguetesSpaceX((prevFoguetes) => {
+        return prevFoguetes.map((foguete) => {
+          if (foguete.id === fogueteAtualizado.id) {
+            return {
+              ...foguete,
+              lancado: fogueteAtualizado.lancado,
+              dataLancamento: fogueteAtualizado.dataLancamento,
+            };
+          }
+          return foguete; // Mantém o estado de foguetes já lançados
+        });
+      });
+  
+      // Atualiza foguetes personalizados
+      setFoguetesPersonalizados((prevFoguetes) => {
         const foguetesAtualizados = prevFoguetes.map((foguete) => {
           if (foguete.id === fogueteAtualizado.id) {
             return {
@@ -80,13 +96,17 @@ function Foguetes() {
               dataLancamento: fogueteAtualizado.dataLancamento,
             };
           }
-          return foguete;
+          return foguete; // Mantém o estado de foguetes já lançados
         });
+        localStorage.setItem(`foguetes_${usuario.nome}`, JSON.stringify(foguetesAtualizados));
         return foguetesAtualizados;
-      });      
+      });
+  
       navigate("/foguetes", { replace: true, state: {} });
     }
   }, [isFoguetesLoaded, location.state, navigate, usuario]);
+  
+  
 
   const handleCreateFoguete = async (e) => {
     e.preventDefault();
