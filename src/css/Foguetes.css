@@ -1,70 +1,165 @@
 .foguetes-container {
-    padding: 20px;
-    position: relative; 
-  }
-  
-  .foguetes-container h1 {
-    text-align: left; 
-    margin-bottom: 20px; 
-    font-weight: 300;
-  }
-  
+  padding: 20px;
+  position: relative;
+}
+
+.foguetes-container h1 {
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.foguetes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.foguete-card {
+  width: 300px;
+  height: 450px;
+  padding: 16px 0 0 0;
+  gap: 10px;
+  border-radius: 8px;
+  border: 0.5px solid #1D3558;
+  opacity: 1;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  order: 2; /* Por padrão, todos os cards terão ordem 2 */
+}
+
+.foguete-card:first-child {
+  order: 1; /* O primeiro card (Criar novo foguete) sempre será o primeiro na ordem */
+}
+
+.foguete-card img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.foguete-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.foguete-card p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.foguete-card button {
+  width: 280px;
+  height: 50px;
+  padding: 10px 0;
+  border-radius: 8px;
+  background-color: #1D3558;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.foguete-card button:hover {
+  background-color: #243b5e;
+}
+
+/* Media queries para tornar responsivo em telas menores */
+@media (max-width: 768px) {
   .foguetes-grid {
-    display: flex;
-    justify-content: center; 
-    gap: 20px; 
-    flex-wrap: wrap; 
-  }
-  
-  .foguete-card {
-    width: 300px; 
-    height: 450px; 
-    padding: 16px 0 0 0;
-    gap: 10px;
-    border-radius: 8px;
-    border: 0.5px solid transparent;
-    opacity: 1;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    background-color: #fff;
   }
-  
-  .foguete-card img {
-    width: 280px; 
-    height: 200px; 
-    object-fit: cover;
-    border-radius: 8px;
+
+  .foguete-card {
+    width: 100%; /* Os cards ocuparão toda a largura */
+    max-width: 350px; /* Limite de largura */
   }
-  
-  .foguete-card h3 {
-    margin: 10px 0;
-    font-size: 18px;
-    color: #333;
+
+  .foguetes-container h1 {
+    text-align: center; /* Centraliza o título em telas menores */
   }
-  
-  .foguete-card p {
-    margin: 5px 0;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .foguete-card button {
-    width: 280px; 
-    height: 50px; 
-    padding: 10px 0;
-    border-radius: 8px;
-    background-color: #1D3558;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: auto;
-  }
-  
-  .foguete-card button:hover {
-    background-color: #243b5e;
-  }
-  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #1D3558;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  z-index: 1000;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="url"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  background-color: #fff;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form input[type="url"]:focus {
+  border-color: #1D3558;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(29, 53, 88, 0.5);
+}
+
+form label {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+form button[type="submit"] {
+  padding: 12px;
+  background-color: #1D3558;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #243b5e;
+}
+
+form button[type="submit"]:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+

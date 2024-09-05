@@ -1,17 +1,3 @@
-Print Login
-![image](https://github.com/user-attachments/assets/7a8641bd-d823-449c-8bc0-ad5f2d1caa47)
-Print Cadastrar
-![image](https://github.com/user-attachments/assets/808383f8-443b-487c-aa54-9988b01da0e1)
-Print Idade
-![image](https://github.com/user-attachments/assets/2b525cea-59f7-4f95-b0c8-e1b594dd9c03)
-Print Foguetes
-![image](https://github.com/user-attachments/assets/2ae0838d-131b-44d9-b5da-86375710a650)
-Print Lançamento
-![image](https://github.com/user-attachments/assets/b7bb9711-09e3-4fc2-a90b-20ba5e2c2503)
-
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
