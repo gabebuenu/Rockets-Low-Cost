@@ -1,0 +1,100 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escurecido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Para garantir que o modal fique sobre todos os outros elementos */
+  }
+  
+  .modal-content {
+    background-color: #ffffff; /* Mudamos a cor de fundo do modal */
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #457B9D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; 
+    width: 500px;
+  }
+  
+  .modal-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .modal-content h1 {
+    font-size: 1.5rem;
+    margin: 0 0 20px 0;
+    font-weight: 300; 
+    color: #333;
+  }
+  
+  .confirm-button {
+    width: 100%; 
+    height: 56px; 
+    padding: 0;
+    border-radius: 8px; 
+    background-color: #1D3558; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  
+  .confirm-button:hover {
+    background-color: #243b5e;
+  }
+  
+  .cancel-button {
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: color 0.3s; 
+  }
+  
+  .cancel-button:hover {
+    color: #bfc0c2;
+  }
+  
+  /* ModalLancamento.css */
+
+  .loader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; /* Espaço entre o loader e o texto */
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  

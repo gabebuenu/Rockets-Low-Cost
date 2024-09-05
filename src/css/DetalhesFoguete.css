@@ -1,0 +1,61 @@
+.detalhes-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante que ocupe a altura total da tela */
+    padding: 20px;
+}
+
+
+.detalhes-foguete-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #1D3558;
+    border-radius: 8px;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .detalhes-foguete-container h2{
+    margin-bottom: 10px;
+  }
+  
+  .foguete-detalhes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .foguete-imagem img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .foguete-info {
+    flex: 1;
+  }
+  
+  .foguete-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .cancelar-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1D3558; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .cancelar-button:hover {
+    background-color: #243b5e;
+  }

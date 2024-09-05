@@ -1,73 +1,89 @@
-/* Modal.css */
+/* modalo.css */
 
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modal-content {
-    background-color: transparent;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    border: 1px solid #457B9D;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; 
-    width: 500px;
-  }
-  
-  .modal-content p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
-  }
-  
-  .modal-content h1 {
-    font-size: 6rem;
-    margin: 0 0 20px 0;
-    font-weight: 300; 
-    color: #333;
-  }
-  
-  .confirm-button {
-    width: 100%; 
-    height: 56px; 
-    padding: 0;
-    border-radius: 8px; 
-    background-color: #1D3558; 
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s;
-  }
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Colocar o modal na frente */
+}
 
-  .confirm-button:hover {
-    background-color: #243b5e;
-  }
-  
-  .cancel-button {
-    background: none;
-    border: none;
-    color: #000000;
-    cursor: pointer;
-    font-size: 14px;
-    margin-top: 10px;
-    transition: color 0.3s; 
-  }
-  
-  .cancel-button:hover {
-    color: #bfc0c2;
-  }
+.modalo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalo-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #457B9D;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+  width: 400px;
+  height: 360px;
+  z-index: 1000;
+}
+
+.modalo-content p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.modalo-content h1 {
+  font-size: 6rem;
+  margin: 0 0 20px 0;
+  font-weight: 300; 
+  color: #333;
+}
+
+.confirma-button {
+  width: 100%; 
+  height: 56px; 
+  padding: 0;
+  border-radius: 8px; 
+  background-color: #1D3558; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.confirma-button:hover {
+  background-color: #243b5e;
+}
+
+.cancela-button {
+  background: none;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: color 0.3s; 
+}
+
+.cancela-button:hover {
+  color: #bfc0c2;
+}

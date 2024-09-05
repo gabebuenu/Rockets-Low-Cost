@@ -4,14 +4,14 @@
     box-sizing: border-box;
 }
 
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+
+/* Adicione um contêiner principal para envolver a seção de login */
+.login-page {
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    align-items: center;
+    min-height: 100vh; /* Garante que ocupe a altura total da tela */
+    padding: 20px;
 }
 
 .login-container {
@@ -19,7 +19,9 @@ body, html {
     max-width: 400px;
     padding: 20px;
     text-align: left;
+    margin: auto;
 }
+
 
 .illustration img {
     width: 100%;
