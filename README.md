@@ -124,7 +124,7 @@ Testes Unitários: Adicionar testes unitários com Jest para garantir a qualidad
 Melhorias de UI/UX: Ajustar a interface para melhor experiência do usuário.
 Logs de Lançamentos: Implementar um histórico detalhado dos lançamentos com filtros.
 🧑‍💻 Contribuidores
-Seu Nome
+Gabriel Bueno
 📝 Licença
 Este projeto é licenciado sob a MIT License.
 
