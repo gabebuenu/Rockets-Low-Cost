@@ -1,4 +1,4 @@
-PARA RODAR O PROJETO DAR npm install na pasta raiz, após isso dar cd backend node server.js para ligar o back
+PARA RODAR O PROJETO DAR npm install na pasta raiz e backend, após isso dar cd backend node server.js para ligar o back
 
 #PROJETO SÓ RODA O FRONT NO VERCEL, BACKEND NÃO
 
